@@ -1,0 +1,27 @@
+{
+  "name": "wcs",
+  "description": "A tool like wordcount that supports continuous streams at a regular interval",
+  "version": "0.0.0",
+  "author": "Dave Eddy <dave@daveeddy.com> (http://www.daveeddy.com)",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bahamas10/node-wcs.git"
+  },
+  "dependencies": {},
+  "bin": {
+    "wcs": "./bin/wcs.js"
+  },
+  "preferGlobal": true,
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "keywords": [
+    "wordcount",
+    "wc",
+    "stream",
+    "frequency"
+  ]
+}
