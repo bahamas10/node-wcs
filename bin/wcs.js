@@ -21,17 +21,16 @@ process.stdin.on('data', function(data) {
 
 process.stdin.on('end', function() {
   clearInterval(interval);
-	process_body();
+  process_body();
 });
 
 // Start the frequency interval
 var interval = setInterval(process_body, time);
 
 function process_body() {
-	var _body = body;
-  body = '';
-  var lines = (_body.match(/\n/g) || '').length;
-	var words = (_body.match(/\w+/g) || '').length;
-	var chars = _body.length;
+  var lines = (body.match(/\n/g) || '').length;
+  var words = (body.split(/\s+/) || ' ').length - 1;
+  var chars = body.length;
   console.log(lines, words, chars);
+  body = '';
 }
